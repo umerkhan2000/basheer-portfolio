@@ -278,7 +278,7 @@ const AboutSection = () => {
               handle="basheer_dev"
               status="Available for Projects"
               contactText="LinkedIn"
-              avatarUrl="/profile.jpg"
+              avatarUrl={import.meta.env.BASE_URL + 'profile.jpg'}
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
