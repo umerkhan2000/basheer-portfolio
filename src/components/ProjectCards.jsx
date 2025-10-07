@@ -74,7 +74,7 @@ const ProjectCards = () => {
       image: "/api/placeholder/400/250",
       tech: ["Unity XR", "Enterprise VR", "Multi-user Systems", "Training Simulation"],
       color: "#8b5cf6",
-      videoUrl: "/videos/Spatialworld.mp4",
+      videoUrl: import.meta.env.BASE_URL + "videos/Spatialworld.mp4",
       category: "Enterprise VR"
     }
   ];
