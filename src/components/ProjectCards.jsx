@@ -135,7 +135,7 @@ const ProjectCards = () => {
                 position: 'relative',
                 overflow: 'hidden'
               }}>
-                {project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.startsWith('/videos/')) ? (
+                {project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.includes('videos/')) ? (
                   <>
                     <video
                       src={project.videoUrl}
@@ -179,13 +179,13 @@ const ProjectCards = () => {
                 <div 
                   className="fallback-icon"
                   style={{
-                    position: (project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.startsWith('/videos/'))) ? 'absolute' : 'static',
+                    position: (project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.includes('videos/'))) ? 'absolute' : 'static',
                     top: '50%',
                     left: '50%',
-                    transform: (project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.startsWith('/videos/'))) ? 'translate(-50%, -50%)' : 'none',
+                    transform: (project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.includes('videos/'))) ? 'translate(-50%, -50%)' : 'none',
                     fontSize: '3rem',
                     zIndex: 1,
-                    display: (project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.startsWith('/videos/'))) ? 'none' : 'flex',
+                    display: (project.videoUrl && (project.videoUrl.includes('cloudinary') || project.videoUrl.includes('videos/'))) ? 'none' : 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     width: '100%',
